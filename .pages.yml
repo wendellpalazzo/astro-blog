@@ -9,7 +9,7 @@ content:
     view:
       fields: [ title, draft, date ]
     fields:
-      - { name: heroImage, label: "Hero Image", type: image}
+      - { name: heroImage, label: "Hero Image", type: image, options: { input: public/assets, output: /astro-blog/assets }}
       - { name: author, label: Author, type: string }
       - { name: pubDatetime, label: Date, type: date }
       - { name: modDatetime, label: Date, type: date }
